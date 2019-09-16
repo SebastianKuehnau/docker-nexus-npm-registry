@@ -1,5 +1,5 @@
 # docker-nexus-npm-registry
-This repository creates a local npm registry provided by nexus running in a local docker image
+This repository creates a local npm registry provided by nexus running in a local docker image and it should help to reduce internet traffic and built time by downloading redundant npm dependencies.
 
 It contains an extension of the **Dockerfile** of [Nexus3](https://github.com/sonatype/docker-nexus) for [Docker](https://www.docker.com/)'s.
 
@@ -7,6 +7,7 @@ It contains an extension of the **Dockerfile** of [Nexus3](https://github.com/so
 ### Base Docker Image
 
 * [nexus:latest](https://hub.docker.com/r/sonatype/nexus)
+
 
 ### Installation
 
@@ -19,6 +20,7 @@ It contains an extension of the **Dockerfile** of [Nexus3](https://github.com/so
    or, you can build an image from the given Dockerfile: 
    
     `docker build -t="npm-registry" .`
+
 
 ### Usage
 
