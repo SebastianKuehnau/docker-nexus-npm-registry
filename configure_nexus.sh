@@ -27,9 +27,14 @@ do
 done
 echo "webservice is running!"
 
-# set anomynous login to true
+# go to folder with scripts for npm registry creation and set anomynous login to true
 cd /tmp/nexus-scripting-examples-master/simple-shell-example/
 
+# create npm registry
+sh create.sh npm.json
+sh run.sh npm
+
+# set anomynous to true
 sh setAnonymous.sh true
 
 # change password to admin
