@@ -13,7 +13,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <failOnMissingWebXml>false</failOnMissingWebXml>
 
-        <vaadin.version>14.0.0</vaadin.version>
+        <vaadin.version>14.0.4</vaadin.version>
 
         <drivers.downloader.phase>pre-integration-test</drivers.downloader.phase>
     </properties>
@@ -134,7 +134,7 @@
                              "install", so unless you need to run some other npm command,
                              you can remove this whole <configuration> section.
                              -->
-                             <arguments>install --verbose</arguments>
+                             <arguments>install</arguments>
                             <npmRegistryURL>http://localhost:8081/repository/npmjs-org/</npmRegistryURL>
                         </configuration>
                     </execution>
