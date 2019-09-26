@@ -36,6 +36,8 @@ After setting up the docker image you need to compile a vaadin project on your m
     
     $ mvn install -Pproduction --file vaadin-example/my-nexus-project/pom.xml
 
+TIP: You could add "-Dvaadin.version=<vaadin version number>" to download the dependencies for a specific vaadin version. 
+
 Beware, if you want to add web-components to the project later, which are not part of the default web-component set, you need to have a internet connection available to download and add them to your local npm-regsitry.
 
 To check the content of the npm registry you can go to [localhost:8081](http://localhost:8081/) and login with username "admin" and password "admin".
