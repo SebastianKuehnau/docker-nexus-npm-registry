@@ -2,6 +2,12 @@
 
 file="/nexus-data/admin.password"
 
+if [ -f "$file" ]
+then
+    echo "nexus seems to be already configured"
+    exit 0
+fi
+
 # wait for admin.password file in nexus folder
 while [ ! -f "$file" ]
 do
