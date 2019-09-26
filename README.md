@@ -34,7 +34,7 @@ or add [frontend-maven-plugin](https://repo1.maven.org/maven2/com/github/eirslet
 
 After setting up the docker image you need to compile a vaadin project on your machine with 
     
-    $ mvn install -Pproduction
+    $ mvn install -Pproduction --file vaadin-example/my-nexus-project/pom.xml
 
 Beware, if you want to add web-components to the project later, which are not part of the default web-component set, you need to have a internet connection available to download and add them to your local npm-regsitry.
 
